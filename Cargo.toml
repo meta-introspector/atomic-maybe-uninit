@@ -136,5 +136,5 @@ crabgrind = "0.1"
 # type_complexity = { level = "allow", priority = 1 }
 # unreadable_literal = { level = "allow", priority = 1 }
 
-[profile.release]
-debug = true
+# [profile.release]
+# debug = true
