@@ -11,7 +11,7 @@ use std::{env, str};
 
 fn main() {
     println!("cargo:rerun-if-changed=build.rs");
-
+//    println!("cargo::rustc-check-cfg=cfg(target_pointer_width, values(\"128\"))");
     let target = &*env::var("TARGET").expect("TARGET not set");
     let target_arch = &*env::var("CARGO_CFG_TARGET_ARCH").expect("CARGO_CFG_TARGET_ARCH not set");
     let target_os = &*env::var("CARGO_CFG_TARGET_OS").expect("CARGO_CFG_TARGET_OS not set");
